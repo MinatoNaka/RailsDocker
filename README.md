@@ -1,14 +1,16 @@
 docker-compose settings for Ruby on Rails
 
-E‚±‚ÌƒŠƒ|ƒWƒgƒŠ‚ğclone‚·‚é
+ãƒ»ã“ã®ãƒªãƒã‚¸ãƒˆãƒªã‚’cloneã™ã‚‹
+â€»git pullã—ãŸã¨ãã«entrypoint.shã®æ”¹è¡Œã‚³ãƒ¼ãƒ‰ãŒCRLFã«è‡ªå‹•å¤‰æ›ã•ã‚Œã¦ã—ã¾ã†å¯èƒ½æ€§ãŒã‚ã‚‹ã€‚ãã®å ´åˆã¯LFã«å†å¤‰æ›ã™ã‚‹ã“ã¨ã€‚
 
-Erails new‚ÅRailsƒCƒ“ƒXƒg[ƒ‹
+
+ãƒ»rails newã§Railsã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«
 `docker-compose run web rails new . --force --no-deps --database=postgresql`
 
-Edockerƒrƒ‹ƒh
+ãƒ»dockerãƒ“ãƒ«ãƒ‰
 `docker-compose build`
 
-EDBƒRƒlƒNƒVƒ‡ƒ“İ’è
+ãƒ»DBã‚³ãƒã‚¯ã‚·ãƒ§ãƒ³è¨­å®š
 
 ```
 default: &default
@@ -20,12 +22,12 @@ default: &default
 +  password: password
 ```
 
-EDBì¬
+ãƒ»DBä½œæˆ
 `docker-compose run web rake db:create`
 
-EƒRƒ“ƒeƒi‹N“®
+ãƒ»ã‚³ãƒ³ãƒ†ãƒŠèµ·å‹•
 `docker-compose up -d`
 
-Ehttp://localhost:3000 ‚ÅƒAƒNƒZƒX‚µ‚½‚çƒz[ƒ€‰æ–Ê‚ª•\¦‚³‚ê‚é
+ãƒ»http://localhost:3000 ã§ã‚¢ã‚¯ã‚»ã‚¹ã—ãŸã‚‰ãƒ›ãƒ¼ãƒ ç”»é¢ãŒè¡¨ç¤ºã•ã‚Œã‚‹
 
 
